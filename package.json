@@ -1,5 +1,5 @@
 {
-	"name" : "mimetype",
+	"name" : "react-native-mimetype",
 	"version" : "0.0.7",
 	"description" : "A mime type catalog driven by filename extensions.",
 	"main" : "./mimetype.js",
