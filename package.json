@@ -4,16 +4,16 @@
 	"description" : "A mime type catalog driven by filename extensions.",
 	"main" : "./mimetype.js",
 	"repository" : {
-		"type" : "git", 
-		"url" : "https://github.com/rsdoiel/mimetype-js.git"
+		"type" : "git",
+		"url" : "https://github.com/eyaleizenberg/mimetype-js.git"
 	},
 	"author" : {
-		"name" : "R. S. Doiel", 
-		"email" : "rsdoiel@gmail.com", 
+		"name" : "R. S. Doiel",
+		"email" : "rsdoiel@gmail.com",
 		"url" : "https://github.com/rsdoiel"
 	},
 	"maintainers" : [{
-		"name" : "R. S. Doiel", 
+		"name" : "R. S. Doiel",
 		"url" : "https://github.com/rsdoiel"
 	}],
 	"engines" : {
@@ -27,6 +27,6 @@
 		"test" : "node tests/mimetype_test.js"
 	},
 	"bugs": {
-		"url": "http://github.com/rsdoiel/mimetype-js/issues"
+		"url": "https://github.com/eyaleizenberg/mimetype-js/issues"
    	}
 }

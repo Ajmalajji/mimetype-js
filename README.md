@@ -4,8 +4,10 @@ mimetype-js
 
 # Overview
 
-I find keep making these file extension lookup tables for mime types.  It's 
+I find keep making these file extension lookup tables for mime types.  It's
 about time I put it in a module to save me the trouble.
+
+This version differs from rsdoiel's version because we are not looking for the path module at all. This means that we can use this for React Native (which has Node, but doesn't have Path).
 
 # Examples
 
@@ -13,7 +15,7 @@ about time I put it in a module to save me the trouble.
 
 ```JavaScript
 	var mimetype = require('mimetype');
-	
+
 	console.log(mimetype.lookup("myfile.txt")); // Should display text/plain
 	mimetype.set('.exotic', 'x-application/experimental'); // Add/update a mime type in the catalog
 	console.log(mimetype.lookup("myfile.exotic")); // Should display x-application/experimental
@@ -26,12 +28,12 @@ about time I put it in a module to save me the trouble.
 
 ## Special cases
 
-Sometimes detecting by filename extensions isn't work and you want to 
+Sometimes detecting by filename extensions isn't work and you want to
 default to a general purposes mime-type (e.g. text/plain, application/octet-stream).
 
 ```JavaScript
 	var mimetype = require('mimetype');
-	
+
 	// This should display 0 (false)
 	console.log(mimetype.lookup("filename.unknownMimeType");
 	// This should display the string text/plain
@@ -58,5 +60,5 @@ This would display something like-
 	> load("./extras/load-mimetype.js");
 	> print("Check the mime type of test.txt: " + MimeType.lookup("test.txt"));
 	Check the mime type of test.txt: text/plain
-	> 
+	>
 ```
